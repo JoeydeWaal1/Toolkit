@@ -163,7 +163,7 @@ Om de 192.168.0.10 host te deauthen gebruik je het volgende commando.
 ### Man in the middle
 Als laatste heb ik een man in the middle aanval toegevoegd. Deze aanval hebben we gezien in de labo's, hier heb ik ook mijn inspiratie vandaan gehaald. Deze stuurt ARP-bericht op een manier waardoor dat de default gateway en de target denken dat ze met elkaar aan het praten zijn maar eigenlijk zit onze machine ertussen.
 
-Als we een target hebben met ip 192.168.0.15, een defaultgateway met ip 192.168.0.1 en een host hebben met 192.168.0.38 als ip kun je met het volgende commando een man in the middle aanval doen.
+Als we een target hebben met IP-adres 192.168.0.15, een defaultgateway met IP-adres 192.168.0.1 en een host hebben met 192.168.0.38 als IP-adres kun je met het volgende commando een man in the middle aanval doen.
 `sudo python3 main.py -a mitm -t 192.168.0.15 -g 192.168.0.1 --host 192.168.0.38`
 
 Deze output volgt, het programma gaat hierna oneindig lang ARP-berichten blijven uitzenden.
@@ -174,7 +174,7 @@ Deze output volgt, het programma gaat hierna oneindig lang ARP-berichten blijven
 [INFO] starting spoofer 192.168.0.1 -> 192.168.0.15
 ```
 
-Via de target machine surfte ik naar google.com. Als we via onze machine via tcpdump kijken zien we dit allemaal voorbijkomen. Merk op dat het 216.58.208.110 een ip is van google.com.
+Via de target machine surfte ik naar google.com. Als we via onze machine via tcpdump kijken zien we dit allemaal voorbijkomen. Merk op dat het 216.58.208.110 een IP-adres is van google.com.
 ```
 $ sudo tcpdump host 216.58.208.110
 tcpdump: data link type PKTAP
