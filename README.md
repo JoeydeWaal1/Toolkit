@@ -1,6 +1,7 @@
 # Verslag Ethical Hacking toolkit
-Als eindproject voor het python gedeelte van Ethical Hacking werd er verwacht om een toolkit te schrijven die we als basis konden gebruiken voor pentesting. Ik heb geprobeerd om zeker een stabiele basis te voorzien in deze toolkit. Het aanspreken van de toolkit en het loggen heeft een structuur die ervoor zorgt dat ik hier eenvoudig nieuwe code aan toe kan voegen.
+Als eindproject voor het python gedeelte van Ethical Hacking werd er verwacht om een toolkit te schrijven die we als basis konden gebruiken voor pentesting. Ik heb geprobeerd om zeker een stabiele basis te voorzien in deze toolkit. Het aanspreken van de toolkit en het loggen heeft een structuur die ervoor zorgt dat ik hier eenvoudig nieuwe code aan toe kan voegen. Alle code staat op GitHub achter deze link, [https://github.com/JoeydeWaal1/Toolkit.git](https://github.com/JoeydeWaal1/Toolkit.git).
 De toolkit is opgedeeld in twee stukken, het scan gedeelte en het aanval gedeelte. Bij het gebruiken van de toolkit moet een van deze vlaggen, `--attack` (`-a` in het kort) of `--scan` (`-s` in het kort), altijd aanwezig zijn.
+
 
 
 ## Argumenten
